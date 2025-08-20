@@ -50,3 +50,7 @@ This doesn't seem to be needed anymore, but in the past the touchscreen would be
 ## Troubleshooting
 
 You can usually get back to a sane-ish state by switching your update channel to Preview, installing all updates, then switching back to Stable and again installing all updates.
+
+## Thanks and generosity
+
+If this helped, maybe throw a coffee my way. Or... a discount bottle of water? https://ko-fi.com/jaromino
