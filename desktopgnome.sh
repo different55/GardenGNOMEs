@@ -10,6 +10,7 @@ end
 # Prepare system for the pacman repos
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
+sudo pacman-key --populate holo
 
 # Install GNOME packages
 sudo pacman --overwrite "*" -Syu gnome-keyring gnome-screenshot gnome-shell-extensions gnome-shell gnome-control-center gnome-tweaks gnome-software nautilus sushi xdg-user-dirs-gtk xdg-desktop-portal-gnome xorg-xinput
@@ -22,6 +23,7 @@ echo "\
 #!/bin/sh
 export XDG_SESSION_TYPE=x11
 export GDK_BACKEND=x11
+export XDG_CURRENT_DESKTOP=GNOME
 exec gnome-session
 " | sudo tee /usr/bin/startgnome-x11
 sudo chmod 755 /usr/bin/startgnome-x11
