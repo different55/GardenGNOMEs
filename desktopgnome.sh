@@ -55,3 +55,14 @@ PrefersNonDefaultGPU=true
 X-KDE-RunOnDiscreteGpu=true
 " > ~/.config/autostart/steam.desktop
 chmod 644 ~/.config/autostart/steam.desktop
+
+# Ask if the user wants to launch into GNOME
+read -l -P "Do you want to close everything and launch GNOME now? (Y/n) " confirm
+switch $confirm
+    case Y y Yes yes
+        steamos-session-select plasma
+    case '*'
+        echo "Just log out and come back to Desktop mode whenever you're ready!"
+end
+
+echo "To uninstall, switch your update channel to Preview/Stable and then back."
