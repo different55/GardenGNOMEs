@@ -11,7 +11,7 @@ Sticking on the Stable update channel is HIGHLY recommended. Both to minimize th
 
 ### Install GNOME
 
-To install GNOME with this script, easiest way is to just run this in your terminal:
+To install GNOME with this script, easiest way is to switch to Desktop Mode, open Konsole, and paste this in:
 
 ```
 curl https://raw.githubusercontent.com/different55/GardenGNOMEs/refs/heads/main/desktopgnome.sh | fish
