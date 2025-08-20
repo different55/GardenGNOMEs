@@ -13,7 +13,9 @@ Sticking on the Stable update channel is HIGHLY recommended. Both to minimize th
 
 To install GNOME with this script, easiest way is to just run this in your terminal:
 
-`curl https://raw.githubusercontent.com/different55/GardenGNOMEs/refs/heads/main/desktopgnome.sh | fish`
+```
+curl https://raw.githubusercontent.com/different55/GardenGNOMEs/refs/heads/main/desktopgnome.sh | fish
+```
 
 But keep in mind that this literally just downloads whatever I have here on GitHub and runs it, which is decidedly insecure. I invite you to read the script before running it.
 
