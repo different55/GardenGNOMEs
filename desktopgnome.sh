@@ -33,3 +33,16 @@ sudo ln -s /usr/bin/startgnome-x11 /usr/bin/startplasma-x11
 
 # Disable HiDPI 2x scaling
 gsettings set org.gnome.desktop.interface scaling-factor 1
+
+# Autostart Steam silently on GNOME
+echo "\
+[Desktop Entry]
+Name=Steam
+Exec=/usr/bin/steam -silent
+Icon=steam
+Terminal=false
+Type=Application
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
+" | tee ~/.config/autostart/steam.desktop
+chmod 644 ~/.config/autostart/steam.desktop
