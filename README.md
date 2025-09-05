@@ -5,16 +5,16 @@ A messy handful of scripts to get GNOME up and running on the Steam Deck.
 
 Sticking on the Stable update channel is HIGHLY recommended. Both to minimize the number of updates and because Beta and Preview are often subtly broken. Not even Stable is immune though, so do all of this at your own risk.
 
-## desktopgnome.sh
+## gardengnome.sh
 
-`desktopgnome.sh` installs GNOME and makes it the default Desktop Mode.
+`gardengnome.sh` installs GNOME and makes it the default Desktop Mode.
 
 ### Install GNOME
 
 To install GNOME with this script, easiest way is to switch to Desktop Mode, open Konsole, and paste this in:
 
 ```
-curl https://raw.githubusercontent.com/different55/GardenGNOMEs/refs/heads/main/gardengnome.sh | fish
+wget https://raw.githubusercontent.com/different55/GardenGNOMEs/refs/heads/main/gardengnome.sh; chmod +x gardengnome.sh; fish gardengnome.sh
 ```
 
 But keep in mind that this literally just downloads whatever I have here on GitHub and runs it, which is decidedly insecure. I invite you to read the script before running it.
@@ -35,7 +35,7 @@ Easiest way to uninstall GNOME is to set your Steam Deck Update channel to somet
 
 ### SteamOS Updates
 
-Currently, `desktopgnome.sh` needs to be manually run every OS update. It's possible to set up a systemd unit to automatically run it on boot, but that work hasn't been done yet. Pull requests are welcomed with open arms!
+Currently, `gardengnome.sh` needs to be manually run every OS update. It's possible to set up a systemd unit to automatically run it on boot, but that work hasn't been done yet. Pull requests are welcomed with open arms!
 
 Steam client updates are no problem, though. If an update says "Applying", you'll need to re-run the script. If it just immediately restarts, you're good.
 
