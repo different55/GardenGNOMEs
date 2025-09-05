@@ -44,6 +44,7 @@ gsettings set org.gnome.desktop.interface scaling-factor 1
 
 # Autostart Steam silently on GNOME
 echo "Setting Steam to autostart silently on GNOME"
+mkdir -p ~/.config/autostart
 echo "\
 [Desktop Entry]
 Name=Steam
